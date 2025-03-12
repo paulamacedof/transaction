@@ -1,4 +1,4 @@
-// craco.config.js (no projeto transaction)
+// craco.config.js (no projeto statement)
 const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
 
       webpackConfig.plugins.push(
         new ModuleFederationPlugin({
-          name: "transaction",
+          name: "statement",
           filename: "remoteEntry.js",
           exposes: {
             // Exponha o componente principal, por exemplo o App, para o container
