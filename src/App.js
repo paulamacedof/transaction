@@ -1,9 +1,9 @@
 import "./App.css";
 
-function App() {
+function App({ state, actions }) {
   return (
     <div className="App">
-      <header className="App-header">Microfrontend Statement</header>
+      <header className="App-header">{state?.microfrontendTitle}</header>
     </div>
   );
 }
